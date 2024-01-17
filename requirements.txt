@@ -3,8 +3,7 @@ pandas
 numpy
 pyarabic
 nltk
-scikit-learn
-pickle
 flask
 threading
 qalsadi
+scikit-learn
