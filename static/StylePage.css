@@ -1,0 +1,234 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Gulzar&family=Open+Sans:wght@400;700&family=Pixelify+Sans:wght@400;600&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+  header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #1b15155f; */
+
+  }
+  header nav {
+    width: 90%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  nav img {
+    width: 100px;
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  nav h1 {
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* color: #7FC7D9; */
+  }
+  nav h1 span {
+    color: #7FC7D9;
+  }
+/* Your existing CSS styles here */
+
+.back {
+  width: 100%;
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  border-radius: 0; /* Removed border-radius */
+  z-index: 1;
+}
+
+.back .img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.back .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+/* Your remaining styles here */
+
+.back .black {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 30;
+    background-color : rgba(0, 0, 0, 0.5);
+}
+.container {
+    width: 500px;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    gap: 10px;
+    margin: 10px;
+  
+}
+ .container .Ayah-form {
+    width: 30px;
+    height: 400px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column !important;
+    gap: 20px;
+   
+ }
+
+#btn {
+    padding: 10px 25px;
+    border-radius: 10px;
+     font-size: 18px;
+     background-color: #151853ef ;
+     color: white;
+     transition: 0.5s;
+
+}
+ 
+#btn:hover{
+    background-color: transparent;
+    transition: 0.5s;
+    
+}
+.mo {
+  width: 600px; 
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+  top: 50px; 
+  flex-wrap: wrap;
+}
+.mo table {
+  width: 100%;
+    min-height: auto;
+    z-index: 5;
+
+
+}
+.mo table tr td , .mo table tr th{
+  border: 1px solid #2b2b2b;
+  padding: 10px;
+  text-align: center  ;
+}
+.mo table tr:nth-child(odd)
+{
+    background-color: rgba(132, 155, 226, 0.534);
+}
+.mo table tr:nth-child(even)
+{
+    background-color: rgb(153, 140, 186);
+}
+
+
+
+
+
+/* ---------------------------- */
+
+
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  width: 500px;
+ }
+ 
+ .input {
+  width: 100%;
+  min-height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f3f3f4;
+  color: #0d0c22;
+  transition: .3s ease;
+ }
+ 
+ .input::placeholder {
+  color: #9e9ea7;
+ }
+ 
+ .input:focus, input:hover {
+  outline: none;
+  border-color: rgba(234,76,137,0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+ }
+ 
+ .icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+ }
+ .hide {
+  display: none;
+ }
+ 
+ 
+ 
+ .table{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ }
+ 
+ 
+ /* Add this CSS at the end of your existing stylesheet */
+
+/* Desktop styles (for screens larger than 768px) */
+@media only screen and (min-width: 700px) {
+  body {
+    font-size: 16px; /* Adjust font size for desktop */
+  }
+  
+  .container {
+    width: 50%; /* Adjust container width for desktop */
+  }
+}
+
+/* Mobile styles (for screens up to 768px) */
+@media only screen and (max-width: 700px) {
+  body {
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+  .group {
+    width: 300px;
+    flex-direction: column;
+    gap: 10px;
+  
+  }
+
+  .container {
+    width: 90%; /* Adjust container width for mobile */
+  }
+}
