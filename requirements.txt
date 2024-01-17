@@ -3,7 +3,7 @@ pandas
 numpy
 pyarabic
 nltk
-sklearn
+scikit-learn
 pickle
 flask
 threading
