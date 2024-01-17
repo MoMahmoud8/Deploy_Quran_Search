@@ -1,9 +1,8 @@
 gunicorn
 pandas
+flask
+qalsadi
 numpy
 pyarabic
 nltk
-flask
-threading
-qalsadi
 scikit-learn
